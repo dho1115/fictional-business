@@ -12,10 +12,6 @@ export class NgModelComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  name=""
-
-  greeting() {
-    
-  }
-
+  name = "Your Name Here."
+  showName = false;
 }

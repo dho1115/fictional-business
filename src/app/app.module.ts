@@ -7,6 +7,7 @@ import { MiscellaneousComponent } from './miscellaneous/miscellaneous.component'
 import { EmployeeComponent } from './employee/employee.component';
 import { InputComponent } from './input/input.component';
 import { NgModelComponent } from './TwoWayDatabinding-ngModel/ng-model/ng-model.component';
+import { OnClickShowDataComponent } from './displayNameOnButtonClick/on-click-show-data/on-click-show-data.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { NgModelComponent } from './TwoWayDatabinding-ngModel/ng-model/ng-model.
     MiscellaneousComponent,
     EmployeeComponent,
     InputComponent,
-    NgModelComponent
+    NgModelComponent,
+    OnClickShowDataComponent
   ],
   imports: [
     BrowserModule,

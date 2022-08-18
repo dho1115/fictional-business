@@ -17,10 +17,8 @@ export class InputComponent implements OnInit {
   disabled = true;
   textOutput = "Hello";
 
-  onInput(event: any) {
-    console.log("OUTPUT: " + (<HTMLInputElement>event.target).value);
+  onTextOutput(event: Event) {
     this.textOutput = (<HTMLInputElement>event.target).value;
-    return this.textOutput
   }
 
 }
