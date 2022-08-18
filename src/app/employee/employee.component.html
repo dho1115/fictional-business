@@ -1,10 +1,16 @@
 
 <section class="employee">
   <h3>Employee Generated:</h3>
+
   <div>
-
+    <label for="employee">ADD EMPLOYEE HERE.</label>
+    <input type="text" name="employee" id="employee" [(ngModel)]="employeeName" />
   </div>
-  <h3>{{employeeName}}</h3>
+  <h3>EMPLOYEE: {{employeeName}}</h3>
+  <h3>{{this.displayEmployee ? employeeName : ''}}</h3>
+  <h1 [innerText]="employeeName ? employeeName: 'NO EMPLOYEE NAME.'"></h1>
 
-  <button (click)="generateDefaultEmployee()">GENERATE DEFAULT EMPLOYEE</button>
+  <button (click)="generateDefaultEmployee()">{{this.displayEmployee ? 'HIDE EMPLOYEE': 'GENERATE DEFAULT EMPLOYEE'}}</button>
+
+  <button [disabled]="this.employeeName == ''" (click)="reset()">DELETE EMPLOYEE</button>
 </section>
