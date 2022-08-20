@@ -8,6 +8,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { InputComponent } from './input/input.component';
 import { NgModelComponent } from './TwoWayDatabinding-ngModel/ng-model/ng-model.component';
 import { OnClickShowDataComponent } from './displayNameOnButtonClick/on-click-show-data/on-click-show-data.component';
+import { NgIfComponent } from './ngIf/ng-if/ng-if.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OnClickShowDataComponent } from './displayNameOnButtonClick/on-click-sh
     EmployeeComponent,
     InputComponent,
     NgModelComponent,
-    OnClickShowDataComponent
+    OnClickShowDataComponent,
+    NgIfComponent
   ],
   imports: [
     BrowserModule,

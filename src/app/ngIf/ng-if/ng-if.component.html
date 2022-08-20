@@ -1,0 +1,12 @@
+<h1 *ngIf="greeting else noGreetingYet">HELLO FROM NG-IF!!!</h1>
+<h1 *ngIf="messageIndicator; else noGreetingYet">THERE IS A MESSAGE!!!</h1>
+
+<ng-template #noGreetingYet>
+  <h1>No Greeting Yet!!!</h1>
+</ng-template>
+
+<ng-template #messageIndicator>
+
+</ng-template>
+
+<button (click)="greeting = !greeting">{{ greeting ? "Make Greeting Disappear!!!" : "See Greeting!!!"}}</button>

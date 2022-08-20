@@ -1,1 +1,4 @@
-<p>on-click-show-data works!</p>
+<input type="text" [(ngModel)]="text" />
+<div></div>
+<h1 style="visibility: {{visibility}}">{{ text }}.</h1>
+<button (click)="toggleVisibility()">CLICK TO MAKE THE TEXT {{visibility === "hidden" ? "APPEAR!!!" : "DISAPPEAR!!!"}}</button>

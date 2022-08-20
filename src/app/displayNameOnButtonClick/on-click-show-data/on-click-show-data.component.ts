@@ -12,4 +12,16 @@ export class OnClickShowDataComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //===== START: VARIABLES. =====
+  visibility="hidden";
+  text='This is the Text To show.'
+  //===== END: VARIABLES. =====
+
+  //===== START: FUNCTIONS. =====
+  toggleVisibility() {
+    this.visibility = this.visibility == "visible" ? "hidden" : "visible";
+    console.log(this.visibility)
+  }
+  //===== END: FUNCTIONS. =====
+
 }
