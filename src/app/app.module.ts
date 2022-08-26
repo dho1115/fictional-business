@@ -9,6 +9,7 @@ import { InputComponent } from './input/input.component';
 import { NgModelComponent } from './TwoWayDatabinding-ngModel/ng-model/ng-model.component';
 import { OnClickShowDataComponent } from './displayNameOnButtonClick/on-click-show-data/on-click-show-data.component';
 import { NgIfComponent } from './ngIf/ng-if/ng-if.component';
+import { NgStyleComponent } from './ngStyle/ng-style/ng-style.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgIfComponent } from './ngIf/ng-if/ng-if.component';
     InputComponent,
     NgModelComponent,
     OnClickShowDataComponent,
-    NgIfComponent
+    NgIfComponent,
+    NgStyleComponent
   ],
   imports: [
     BrowserModule,

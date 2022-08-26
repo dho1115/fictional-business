@@ -1,0 +1,7 @@
+<h1 *ngIf="greetingCreated">A GREETING HAS BEEN CREATED (SEE BELOW)!!!</h1>
+<h1 [ngStyle]="{color: changeColor()}" class="bg-warning">GREETING: {{greeting}}</h1>
+<h1 *ngIf="greetingCreated == false; else greetingStatement" [ngStyle]="{visibilty: greetingCreated == false ? 'visible' : 'hidden'}">WAIT FOR THE GREETING...</h1>
+
+<ng-template #greetingStatement>
+  <h1>I TOLD YOU!!!</h1>
+</ng-template>
