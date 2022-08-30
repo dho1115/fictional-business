@@ -1,0 +1,20 @@
+<h1>{{ this.word }} </h1>
+
+<h1 *ngIf="yourGuess !== ''" [ngStyle]="{color: yourGuess !== randomWordSelected ? 'red' : 'green'}">{{ yourGuess === randomWordSelected? 'CORRECT!!!' : 'INCORRECT!!!'}}</h1>
+
+<div *ngIf="guessSubmitted">
+  <h1 *ngIf="yourGuess === randomWordSelected; else guessIsWrong">
+    CORRECT!! YOUR GUESS OF {{yourGuess}} is the same as {{randomWordSelected}}!!!
+  </h1>
+
+  <ng-template #guessIsWrong>
+    <h1>SORRY... YOUR GUESS OF {{yourGuess}} is NOT the same as {{randomWordSelected}}.</h1>
+  </ng-template>
+</div>
+
+<ng-template #nothingSubmitted></ng-template>
+
+<div class="form-group" [ngStyle]="{visibility: handleVisibility()}" >
+  <input type="text" class="form-control" [(ngModel)]="yourGuess">
+  <button type="button" class="btn btn-lg btn-danger" (click)="handleGuessSubmitted()">SUBMIT YOUR GUESS!!!</button>
+</div>

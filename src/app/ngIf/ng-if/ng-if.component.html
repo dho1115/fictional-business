@@ -1,4 +1,4 @@
-<h1 *ngIf="greeting else noGreetingYet">HELLO FROM NG-IF!!!</h1>
+<h1 *ngIf="greeting; else noGreetingYet">HELLO FROM NG-IF!!!</h1>
 <h1 *ngIf="messageIndicator; else noGreetingYet">THERE IS A MESSAGE!!!</h1>
 
 <ng-template #noGreetingYet>

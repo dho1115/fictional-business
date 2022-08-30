@@ -22,6 +22,10 @@ export class OnClickShowDataComponent implements OnInit {
     this.visibility = this.visibility == "visible" ? "hidden" : "visible";
     console.log(this.visibility)
   }
+
+  toggleStyles() {
+    
+  }
   //===== END: FUNCTIONS. =====
 
 }

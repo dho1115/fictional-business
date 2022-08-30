@@ -10,6 +10,8 @@ import { NgModelComponent } from './TwoWayDatabinding-ngModel/ng-model/ng-model.
 import { OnClickShowDataComponent } from './displayNameOnButtonClick/on-click-show-data/on-click-show-data.component';
 import { NgIfComponent } from './ngIf/ng-if/ng-if.component';
 import { NgStyleComponent } from './ngStyle/ng-style/ng-style.component';
+import { SimpleGuessingGameComponent } from './practice/simple-guessing-game/simple-guessing-game.component';
+import { NgClassComponent } from './ng-class/ng-class.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { NgStyleComponent } from './ngStyle/ng-style/ng-style.component';
     NgModelComponent,
     OnClickShowDataComponent,
     NgIfComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    SimpleGuessingGameComponent,
+    NgClassComponent
   ],
   imports: [
     BrowserModule,
