@@ -12,6 +12,7 @@ import { NgIfComponent } from './ngIf/ng-if/ng-if.component';
 import { NgStyleComponent } from './ngStyle/ng-style/ng-style.component';
 import { SimpleGuessingGameComponent } from './practice/simple-guessing-game/simple-guessing-game.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
+import { NgForComponent } from './ng-for/ng-for.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NgClassComponent } from './ng-class/ng-class.component';
     NgIfComponent,
     NgStyleComponent,
     SimpleGuessingGameComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgForComponent
   ],
   imports: [
     BrowserModule,

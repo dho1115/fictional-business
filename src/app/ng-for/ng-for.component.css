@@ -1,0 +1,9 @@
+.makeRed {
+  color: red;
+  background-color: lightseagreen;
+}
+
+.makeGreen {
+  color: lightseagreen;
+  background-color: red;
+}

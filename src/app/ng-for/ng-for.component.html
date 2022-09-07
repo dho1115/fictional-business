@@ -1,0 +1,3 @@
+<p>ng-for works!</p>
+
+<h1 *ngFor="let item of hotels; let i = index" [ngClass]="i%2 === 1 ? 'makeRed' : 'makeGreen' " style="margin: 0">{{i}} : {{ item }}. {{item === 'Bellagio' ? 'THIS HOTEL ROCKS!!!' : '' }} </h1>
