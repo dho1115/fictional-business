@@ -18,6 +18,8 @@ import { ChildComponent } from './@Input/child/child.component';
 import { InnerChildComponent } from './@Input/inner-child/inner-child.component';
 import { ParentEmitterComponent } from './EventEmitter/parent-emitter/parent-emitter.component';
 import { ChildEmitterComponent } from './EventEmitter/child-emitter/child-emitter.component';
+import { SalesDashboardComponent } from './EventEmitter/CompanyDashboard/sales-dashboard/sales-dashboard.component';
+import { SalesPersonComponent } from './EventEmitter/CompanyDashboard/sales-person/sales-person.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ChildEmitterComponent } from './EventEmitter/child-emitter/child-emitte
     ChildComponent,
     InnerChildComponent,
     ParentEmitterComponent,
-    ChildEmitterComponent
+    ChildEmitterComponent,
+    SalesDashboardComponent,
+    SalesPersonComponent,
   ],
   imports: [
     BrowserModule,
