@@ -15,6 +15,7 @@ import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { ParentComponent } from './@Input/parent/parent.component';
 import { ChildComponent } from './@Input/child/child.component';
+import { InnerChildComponent } from './@Input/inner-child/inner-child.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ChildComponent } from './@Input/child/child.component';
     NgClassComponent,
     NgForComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    InnerChildComponent
   ],
   imports: [
     BrowserModule,
