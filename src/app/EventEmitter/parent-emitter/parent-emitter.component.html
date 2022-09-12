@@ -1,1 +1,12 @@
-<p>parent-emitter works!</p>
+<h1>PARENT EMITTER OBJECT</h1>
+
+<h1 *ngIf="displayChildEmitterDataCalled; else displayChildEmitterDataNotCalled">displayChildEmitterData HAS been called.</h1>
+
+<ng-template #displayChildEmitterDataNotCalled>
+  <h1 [ngStyle]="{color: 'red'}">displayChildEmitterData has NOT been called.</h1>
+</ng-template>
+
+<div class="p-3 m-3" [ngStyle]="{border: '1.5px solid black', backgroundColor: 'beige'}">
+  <app-child-emitter (childObject)="displayChildEmitterData($event)" ></app-child-emitter>
+</div>
+
