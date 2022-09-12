@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-inner-child',
@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inner-child.component.css']
 })
 export class InnerChildComponent implements OnInit {
-
+  @Input() messageFromChild: string = "";
+  
   constructor() { }
 
   ngOnInit(): void {

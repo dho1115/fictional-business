@@ -16,6 +16,8 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { ParentComponent } from './@Input/parent/parent.component';
 import { ChildComponent } from './@Input/child/child.component';
 import { InnerChildComponent } from './@Input/inner-child/inner-child.component';
+import { ParentEmitterComponent } from './EventEmitter/parent-emitter/parent-emitter.component';
+import { ChildEmitterComponent } from './EventEmitter/child-emitter/child-emitter.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { InnerChildComponent } from './@Input/inner-child/inner-child.component'
     NgForComponent,
     ParentComponent,
     ChildComponent,
-    InnerChildComponent
+    InnerChildComponent,
+    ParentEmitterComponent,
+    ChildEmitterComponent
   ],
   imports: [
     BrowserModule,

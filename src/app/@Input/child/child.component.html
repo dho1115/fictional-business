@@ -1,6 +1,5 @@
 <div class="p-5 m-3" style="border: 1.5px solid red; background-color: yellow;" >
   <h1>CHILD COMPONENT.</h1>
   <h5>messageFromParent: {{messageFromParent}}.</h5>
-  <app-inner-child [ngStyle]="{border: '3px solid maroon', backgroundColor: 'hotpink'}" ></app-inner-child>
+  <app-inner-child [ngStyle]="{border: '1px solid maroon', backgroundColor: 'black', color: 'grey'}" [messageFromChild]="messageFromParent" ></app-inner-child>
 </div>
-
