@@ -13,6 +13,8 @@ import { NgStyleComponent } from './ngStyle/ng-style/ng-style.component';
 import { SimpleGuessingGameComponent } from './practice/simple-guessing-game/simple-guessing-game.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { ParentComponent } from './@Input/parent/parent.component';
+import { ChildComponent } from './@Input/child/child.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { NgForComponent } from './ng-for/ng-for.component';
     NgStyleComponent,
     SimpleGuessingGameComponent,
     NgClassComponent,
-    NgForComponent
+    NgForComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
