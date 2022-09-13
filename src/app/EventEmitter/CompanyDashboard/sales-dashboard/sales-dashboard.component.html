@@ -3,6 +3,8 @@
 
 <app-sales-person *ngFor="let employee of allSalesEmployees; let i = index" [employeeDetails]="employee" ></app-sales-person>
 
+<app-add-employee></app-add-employee>
+
 <button class="btn btn-danger btn-lg"
   (click)="addNewEmployeeToArray({_empID: 'andy12345', name: 'Andy Jay', sales: 0})"
 >
