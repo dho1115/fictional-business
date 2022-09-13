@@ -7,16 +7,17 @@ import { salesPersonModel } from '../Models/salesPersonModel.model';
   styleUrls: ['./sales-person.component.css']
 })
 export class SalesPersonComponent implements OnInit {
-  @Output() SalesPersonEmitter = new EventEmitter<salesPersonModel>();
+  sales: number = 0;
   @Input() employeeDetails: salesPersonModel = {_empID: '', name: '', sales: 0};
+  @Output() _empIDemittor = new EventEmitter<string>();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  emitNewSalesPerson() {
-    this.SalesPersonEmitter.emit({_empID: 'jamie12345', name: 'Jamie Smith', sales: 0});
+  emit_empIDToAddSales() {
+    this._empIDemittor.emit(this.employeeDetails._empID)
   }
 
 }

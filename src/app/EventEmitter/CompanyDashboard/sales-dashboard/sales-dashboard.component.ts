@@ -16,4 +16,12 @@ export class SalesDashboardComponent implements OnInit {
   addNewEmployeeToArray(salesEmployee:salesPersonModel) {
     this.allSalesEmployees = [...this.allSalesEmployees, salesEmployee];
   };
+
+  updateSales(_empID: string) {
+    this.allSalesEmployees = this.allSalesEmployees.map(val => {
+      val._empID === _empID ? ++val.sales : val;
+      return val;
+    })
+  }
+
 }

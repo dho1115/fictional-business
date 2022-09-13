@@ -1,3 +1,5 @@
-<h3>{{employeeDetails|json}}.</h3>
-<button class="btn btn-success btn-lg">NEW SALE!!!</button>
-<hr />
+<section [ngStyle]="{backgroundColor: this.employeeDetails.sales > 9 ? 'yellow' : 'whitesmoke'}">
+  <h3>Employee Details for <span class="text-danger">{{employeeDetails.name}}</span>: {{employeeDetails|json}}.</h3>
+  <button class="btn btn-success btn-lg" (click)="emit_empIDToAddSales()">NEW SALE!!!</button>
+</section>
+

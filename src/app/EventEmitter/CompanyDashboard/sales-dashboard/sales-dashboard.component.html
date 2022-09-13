@@ -1,7 +1,11 @@
 <h1 class="text-danger">SALES DASHBOARD!!!</h1>
 <h3>ALL SALES EMPLOYEES!!!</h3>
 
-<app-sales-person *ngFor="let employee of allSalesEmployees; let i = index" [employeeDetails]="employee" ></app-sales-person>
+<app-sales-person *ngFor="let employee of allSalesEmployees; let i = index" [employeeDetails]="employee" (_empIDemittor)="updateSales($event)"></app-sales-person>
+
+<hr />
+  <h5>{{allSalesEmployees | json}}.</h5>
+<hr />
 
 <app-add-employee (salesEmployeeEmitter)="addNewEmployeeToArray($event)" ></app-add-employee>
 
