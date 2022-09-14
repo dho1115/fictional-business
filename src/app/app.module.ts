@@ -21,6 +21,7 @@ import { ChildEmitterComponent } from './EventEmitter/child-emitter/child-emitte
 import { SalesDashboardComponent } from './EventEmitter/CompanyDashboard/sales-dashboard/sales-dashboard.component';
 import { SalesPersonComponent } from './EventEmitter/CompanyDashboard/sales-person/sales-person.component';
 import { AddEmployeeComponent } from './EventEmitter/CompanyDashboard/add-employee/add-employee.component';
+import { LocalReferenceComponent } from './localReferences/local-reference/local-reference.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +43,7 @@ import { AddEmployeeComponent } from './EventEmitter/CompanyDashboard/add-employ
     SalesDashboardComponent,
     SalesPersonComponent,
     AddEmployeeComponent,
+    LocalReferenceComponent,
   ],
   imports: [
     BrowserModule,

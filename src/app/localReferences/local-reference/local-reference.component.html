@@ -1,0 +1,13 @@
+<h5>local references (using a #): example is #localReferenceName. A reference to any element.</h5>
+
+<section class="p-5">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" class="form-control" #employeeName >
+    <button class="btn btn-lg btn-danger" (click)="employeeNameRef(employeeName)" >Submit #employeeName.</button>
+  </div>
+</section>
+
+<section>
+  <h3 *ngIf="employeeName.value.length">employeeName: <span class="text-danger">{{employeeName.value | json}}</span>.</h3>
+</section>

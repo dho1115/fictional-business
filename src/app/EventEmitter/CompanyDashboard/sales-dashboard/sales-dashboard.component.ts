@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { salesPersonModel } from '../Models/salesPersonModel.model';
 @Component({
   selector: 'app-sales-dashboard',
   templateUrl: './sales-dashboard.component.html',
-  styleUrls: ['./sales-dashboard.component.css']
+  styleUrls: ['./sales-dashboard.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class SalesDashboardComponent implements OnInit {
   allSalesEmployees: salesPersonModel[] = [];
