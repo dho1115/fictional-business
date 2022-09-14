@@ -1,0 +1,11 @@
+<section class="p-5">
+  <div class="form-group">
+    <label for="name">VIEW CHILD COMPONENT.</label>
+    <input type="text" name="name" id="name" class="form-control" #employeeName:ElementRef >
+    <button class="btn btn-lg btn-danger" (click)="viewChildComponent()" >Submit #empNameRef (view child component).</button>
+  </div>
+</section>
+
+<section class="p-5">
+  <app-inside-child #insideChild></app-inside-child>
+</section>
