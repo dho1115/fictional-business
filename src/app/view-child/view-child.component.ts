@@ -6,11 +6,11 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./view-child.component.css']
 })
 export class ViewChildComponent {
-  @ViewChild("employeeName", {static: true}) empNameRef: any;
+  @ViewChild("employeeName", {static: true}) empNameRef: ElementRef;
 
   constructor() { }
 
-  employeeNameRef(empNameRef: ElementRef) {
+  employeeNameRef(empNameRef: HTMLInputElement) {
     console.log({ empNameRef })
   }
 
