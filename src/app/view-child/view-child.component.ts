@@ -6,7 +6,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
   styleUrls: ['./view-child.component.css']
 })
 export class ViewChildComponent {
-  @ViewChild("employeeName", {static: true}) empNameRef: ElementRef;
+  @ViewChild("employeeName", {static: true}) empNameRef: ElementRef; //strict: false.
 
   constructor() { }
 

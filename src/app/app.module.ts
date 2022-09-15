@@ -24,6 +24,7 @@ import { AddEmployeeComponent } from './EventEmitter/CompanyDashboard/add-employ
 import { LocalReferenceComponent } from './localReferences/local-reference/local-reference.component';
 import { ViewChildComponent } from './view-child/view-child.component';
 import { InsideChildComponent } from './view-child/inside-child/inside-child.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +48,8 @@ import { InsideChildComponent } from './view-child/inside-child/inside-child.com
     AddEmployeeComponent,
     LocalReferenceComponent,
     ViewChildComponent,
-    InsideChildComponent
+    InsideChildComponent,
+    NgContentComponent
   ],
   imports: [
     BrowserModule,
