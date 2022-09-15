@@ -14,12 +14,24 @@
 
 <!-- <app-sales-dashboard></app-sales-dashboard> -->
 
-<app-local-reference></app-local-reference>\
+<app-local-reference></app-local-reference>
+
 <hr />
-<app-view-child></app-view-child>
+
+<!-- <app-view-child></app-view-child> -->
+
 <hr />
+
 <app-ng-content>
-  
+  <h1>Hello from ng-content!!!</h1>
 </app-ng-content>
+
+<div style="border: 1px solid black; border-radius: 15px; background-color: yellow;" class="p-3 m-3">
+  <app-ng-content></app-ng-content>
+</div>
+
+<app-view-child></app-view-child>
+<app-local-reference-view-child></app-local-reference-view-child>
+
 
 

@@ -25,6 +25,7 @@ import { LocalReferenceComponent } from './localReferences/local-reference/local
 import { ViewChildComponent } from './view-child/view-child.component';
 import { InsideChildComponent } from './view-child/inside-child/inside-child.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
+import { LocalReferenceViewChildComponent } from './localReferences/local-reference-view-child/local-reference-view-child.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +50,8 @@ import { NgContentComponent } from './ng-content/ng-content.component';
     LocalReferenceComponent,
     ViewChildComponent,
     InsideChildComponent,
-    NgContentComponent
+    NgContentComponent,
+    LocalReferenceViewChildComponent
   ],
   imports: [
     BrowserModule,
