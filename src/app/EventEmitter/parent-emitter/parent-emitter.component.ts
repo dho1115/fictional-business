@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentEmitterComponent implements OnInit {
   displayChildEmitterDataCalled: boolean = false;
+  emittedFromChild: string;
+  childMessage: any;
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +18,12 @@ export class ParentEmitterComponent implements OnInit {
     //fromChildObject will be equal to whatever is inside the ( ) from this.childObject.emit({['message from emitChildObject()']: 'Activate displayChildEmitterData inside the parent-emiiter!!!'}).
     this.displayChildEmitterDataCalled = !this.displayChildEmitterDataCalled;
     console.log({ fromChildObject })
+    this.childMessage = fromChildObject;
+  }
+
+  automaticEmission(value: string) {
+    console.log({ value })
+    this.emittedFromChild = value;
   }
 
 }

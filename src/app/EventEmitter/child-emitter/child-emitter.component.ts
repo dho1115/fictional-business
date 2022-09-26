@@ -7,10 +7,15 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ChildEmitterComponent implements OnInit {
   @Output() childObject = new EventEmitter<{}>();
+  @Output() newChildEmitter = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit(): void {
-
+    setTimeout(() => {
+      this.newChildEmitter.emit('Auto-emits Message after 5300 seconds!!!');
+      console.log('emitted!!!')
+    }, 5300);
   }
 
   emitChildObject() {

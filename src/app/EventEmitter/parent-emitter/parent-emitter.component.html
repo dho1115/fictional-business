@@ -7,6 +7,11 @@
 </ng-template>
 
 <div class="p-3 m-3" [ngStyle]="{border: '1.5px solid black', backgroundColor: 'beige'}">
+  <h1>CHILD-MESSAGE: {{childMessage | json}}.</h1>
   <app-child-emitter (childObject)="displayChildEmitterData($event)" ></app-child-emitter>
 </div>
 
+<div class="m3 p3" style="background-color: lightslategray;">
+  <app-child-emitter (newChildEmitter)="automaticEmission($event)" *ngIf="emittedFromChild"></app-child-emitter>
+  <h1>Emitted From Child: {{emittedFromChild}}.</h1>
+</div>
