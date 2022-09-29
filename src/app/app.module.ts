@@ -28,6 +28,7 @@ import { NgContentComponent } from './ng-content/ng-content.component';
 import { LocalReferenceViewChildComponent } from './localReferences/local-reference-view-child/local-reference-view-child.component';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirectiveDirective } from './better-highlight-directive.directive';
+import { RendererIDirective } from './renderer/renderer-i.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +56,8 @@ import { BetterHighlightDirectiveDirective } from './better-highlight-directive.
     NgContentComponent,
     LocalReferenceViewChildComponent,
     BasicHighlightDirective,
-    BetterHighlightDirectiveDirective
+    BetterHighlightDirectiveDirective,
+    RendererIDirective
   ],
   imports: [
     BrowserModule,
