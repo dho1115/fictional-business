@@ -3,6 +3,7 @@ import { Directive, OnInit, ElementRef, Renderer2 } from '@angular/core';
 @Directive({
   selector: '[appRendererI]'
 })
+
 export class RendererIDirective implements OnInit {
 
   constructor( private ElementReference: ElementRef, private renderer: Renderer2 ) {
