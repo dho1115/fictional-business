@@ -31,6 +31,8 @@ import { BetterHighlightDirectiveDirective } from './better-highlight-directive.
 import { RendererIDirective } from './renderer/renderer-i.directive';
 import { HostListenerDirective } from './@HostListener/host-listener.directive';
 import { ListenerDirective } from './renderer-listen/listener.directive';
+import { UnlessDirective } from './unless.directive';
+import { SetIDirective } from './StructuralDirectives/Setters/set-i.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +63,9 @@ import { ListenerDirective } from './renderer-listen/listener.directive';
     BetterHighlightDirectiveDirective,
     RendererIDirective,
     HostListenerDirective,
-    ListenerDirective
+    ListenerDirective,
+    UnlessDirective,
+    SetIDirective
   ],
   imports: [
     BrowserModule,

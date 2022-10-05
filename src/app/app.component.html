@@ -1,55 +1,5 @@
-<!-- <app-ng-if></app-ng-if>
-<hr />
-<app-ng-style></app-ng-style>
-<hr />
-<app-simple-guessing-game></app-simple-guessing-game>
-<hr /> -->
-<!-- <app-ng-class></app-ng-class>
-
-<app-ng-for></app-ng-for> -->
-
-<!-- <app-parent></app-parent> -->
-
-<app-parent-emitter></app-parent-emitter>
-
-<!-- <app-sales-dashboard></app-sales-dashboard> -->
-
-<!-- <app-local-reference></app-local-reference>
-
-<hr /> -->
-
-<!-- <app-view-child></app-view-child> -->
-
-<!-- <hr /> -->
-
-<!-- <section style="border: 1.7px solid black; background-color: lightgrey;" class="m-3 p-1">
-  <app-ng-content>
-    <h1>This was created/projected using ng-content (from inside ng-conent.component.html).</h1>
-  </app-ng-content>
-</section>
-
-<div style="border: 1px solid black; border-radius: 15px; background-color: mediumaquamarine;" class="p-3 m-3">
-  <app-ng-content>
-    <h3>Something else from ng-content!!!</h3>
-  </app-ng-content>
-</div>
-
-<div style="border: 1px solid black; border-radius: 15px; background-color: mediumaquamarine;" class="p-3 m-3">
-  <app-ng-content>
-    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/everglades-nights-mark-andrew-thomas.jpg" alt="everglades image" class="img-thumbnail" [ngStyle]="{maxWidth: '10%', maxHeight: 'auto', display: 'inline-block'}" #viewngcontent/>
-  </app-ng-content>
-</div>
-
-<ng-content></ng-content>
-
-<app-view-child></app-view-child>
-<app-local-reference-view-child></app-local-reference-view-child>
-
-
- -->
-
  <h3 basicAppHighlight>basicAppHighlight.</h3>
- <h3 appBetterHighlightDirective>betterHighlightDirective</h3>
+ <h3 appBetterHighlightDirective [defaultColor]="'green'" [highlightColor]="'lightgray'">betterHighlightDirective</h3>
  <h3 appRendererI >appRenderer-I</h3>
 
  <div>
@@ -59,3 +9,32 @@
  <div>
   <h3 appListener>appListener.</h3>
  </div>
+
+<!-- ***** UNLESS DIRECTIVE ***** -->
+ <div *appUnless="renderAppUnless">
+  <h3><span style="color: crimson">appUnless</span> has rendered!!!</h3>
+ </div>
+ <button (click)="renderAppUnless = !renderAppUnless">Change renderAppUnless to {{renderAppUnless}}.</button>
+<!-- **************************** -->
+
+<!-- ********* set-i ********* -->
+ <div *addGreeting="defaultName">
+    <h1>Default name set to {{defaultName}}!!!</h1>
+ </div>
+ <button (click)="defaultName = defaultName == 'Jamie' ? '' : 'Jamie'">CHANGE DEFAULT NAME TO {{defaultName == 'Jamie' ? 'No Name' : 'Jamie'}}!!!</button>
+<!-- ************************* -->
+
+ <div [ngSwitch]="value">
+  <h5 *ngSwitchCase="3" >3</h5>
+  <h5 *ngSwitchCase="6" >6</h5>
+  <!-- <h5 *ngSwitchCase="9" >9</h5> -->
+  <h5 *ngSwitchDefault>DEFAULT.</h5>
+ </div>
+
+ <ng-template [ngIf] = false>
+    <h1>ng-template has rendered.</h1>
+ </ng-template>
+
+ 
+
+

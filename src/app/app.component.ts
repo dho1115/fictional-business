@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'fictional-business';
+  value = 9;
+  renderAppUnless: boolean = false;
+  defaultName: string = '';
 }
