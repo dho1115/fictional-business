@@ -33,6 +33,7 @@ import { HostListenerDirective } from './@HostListener/host-listener.directive';
 import { ListenerDirective } from './renderer-listen/listener.directive';
 import { UnlessDirective } from './unless.directive';
 import { SetIDirective } from './StructuralDirectives/Setters/set-i.directive';
+import { BindStyleDirective } from './@HostBinding/bind-style.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +66,8 @@ import { SetIDirective } from './StructuralDirectives/Setters/set-i.directive';
     HostListenerDirective,
     ListenerDirective,
     UnlessDirective,
-    SetIDirective
+    SetIDirective,
+    BindStyleDirective
   ],
   imports: [
     BrowserModule,
