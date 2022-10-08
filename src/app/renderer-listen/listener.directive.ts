@@ -5,7 +5,9 @@ import { Directive, Renderer2, ElementRef, OnInit } from '@angular/core';
 })
 export class ListenerDirective implements OnInit {
 
-  constructor(private element: ElementRef, private renderer: Renderer2) { }
+  constructor(private element: ElementRef, private renderer: Renderer2) {
+    
+  }
 
   ngOnInit() {
     this.renderer.listen(this.element.nativeElement, 'mouseover', () => this.renderer.setStyle(this.element.nativeElement, 'color', 'crimson'));

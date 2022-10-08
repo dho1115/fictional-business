@@ -1,3 +1,24 @@
 .rendererClass {
   color: red;
 }
+
+.changeOpacity {
+  opacity: 0.3;
+}
+
+.makeInvisible {
+  opacity: 0;
+}
+
+.makeRed {
+  color: red;
+}
+
+.addHighlight {
+  background-color: lightseagreen;
+}
+
+.makeVisible {
+  opacity: 1;
+}
+

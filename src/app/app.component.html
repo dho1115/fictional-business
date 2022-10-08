@@ -24,6 +24,15 @@
  <button (click)="defaultName = defaultName == 'Jamie' ? '' : 'Jamie'">CHANGE DEFAULT NAME TO {{defaultName == 'Jamie' ? 'No Name' : 'Jamie'}}!!!</button>
 <!-- ************************* -->
 
+<!-- ********* set-ii ********* -->
+ <div>
+    <h1 class="addHighlight" appSetNewClass>appSetNewClass.</h1>
+ </div>
+<!-- ************************** -->
+
+<!-- ********* setter-iii ********* -->
+<!-- ****************************** -->
+
  <div [ngSwitch]="value">
   <h5 *ngSwitchCase="3" >3</h5>
   <h5 *ngSwitchCase="6" >6</h5>
@@ -37,7 +46,7 @@
 
  <!----- BIND STYLE DIRECTIVE ------>
  <div>
-    <h1 appBindStyle>bind-style-directive (appBindStyle).</h1>
+    <h1 appBindStyle>bind-style-directive (appBindStyle).</h1> <!--@HostBinding('style') bindStyles-->
  </div>
  <!--------------------------------->
 

@@ -34,6 +34,8 @@ import { ListenerDirective } from './renderer-listen/listener.directive';
 import { UnlessDirective } from './unless.directive';
 import { SetIDirective } from './StructuralDirectives/Setters/set-i.directive';
 import { BindStyleDirective } from './@HostBinding/bind-style.directive';
+import { SetNewClassDirective } from './StructuralDirectives/Setters-ii/set-new-class.directive';
+import { SetterIiiDirective } from './StructuralDirectives/Setters-iii/setter-iii.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +69,9 @@ import { BindStyleDirective } from './@HostBinding/bind-style.directive';
     ListenerDirective,
     UnlessDirective,
     SetIDirective,
-    BindStyleDirective
+    BindStyleDirective,
+    SetNewClassDirective,
+    SetterIiiDirective
   ],
   imports: [
     BrowserModule,

@@ -10,4 +10,5 @@ export class AppComponent {
   value = 9;
   renderAppUnless: boolean = false;
   defaultName: string = '';
+  addNewClass = false;
 }
