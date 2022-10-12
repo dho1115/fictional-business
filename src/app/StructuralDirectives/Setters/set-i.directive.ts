@@ -16,6 +16,8 @@ export class SetIDirective {
     }
   }
 
-  constructor(private template: TemplateRef<any>, private viewContainer: ViewContainerRef) { }
+  constructor(private template: TemplateRef<any>, private viewContainer: ViewContainerRef) { 
+    
+  }
 
 }

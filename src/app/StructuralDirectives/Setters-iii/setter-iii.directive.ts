@@ -1,10 +1,19 @@
-import { Directive } from '@angular/core';
+import { Directive, Input, HostBinding, TemplateRef, ViewContainerRef } from '@angular/core';
 
 @Directive({
-  selector: '[appSetterIii]'
+  selector: '[newClassIII]'
 })
 export class SetterIiiDirective {
+  @HostBinding('class') class: string;
+  @Input() set newClassIII(condition: boolean) {
+    if (condition) {
+      console.log({condition})
+      this.viewContainerRef.createEmbeddedView(this.templateRef)
+    } else {
+      console.log({ condition })
+    }
+  }
 
-  constructor() { }
+  constructor(private templateRef:TemplateRef<any>, private viewContainerRef: ViewContainerRef) { }
 
 }

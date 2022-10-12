@@ -10,7 +10,7 @@ export class BindStyleDirective implements OnInit {
 
   }
 
-  @HostListener('click') styles(e: any) {
+  @HostListener('click') styles() {
     this.newClass = this.newClass == 'makeRed changeOpacity' ? '' : 'makeRed changeOpacity';
   }
 
