@@ -8,6 +8,8 @@ export class HostListenerDirective {
   constructor(private elementReference: ElementRef,  private renderer: Renderer2) { }
 
   @HostListener('mouseenter') makeRed() {
+    console.log({ elementReference: this.elementReference });
+    console.log({ renderer: this.renderer });
     this.renderer.setStyle(this.elementReference.nativeElement, 'color', 'crimson');
   }
 

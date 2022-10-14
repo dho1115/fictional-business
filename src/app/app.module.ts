@@ -37,6 +37,7 @@ import { BindStyleDirective } from './@HostBinding/bind-style.directive';
 import { SetNewClassDirective } from './StructuralDirectives/Setters-ii/set-new-class.directive';
 import { SetterIiiDirective } from './StructuralDirectives/Setters-iii/setter-iii.directive';
 import { BindDirectiveIiDirective } from './@HostBinding/bind-directive-ii.directive';
+import { SetIvDirective } from './StructuralDirectives/Setters-iv/set-iv.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -73,7 +74,8 @@ import { BindDirectiveIiDirective } from './@HostBinding/bind-directive-ii.direc
     BindStyleDirective,
     SetNewClassDirective,
     SetterIiiDirective,
-    BindDirectiveIiDirective
+    BindDirectiveIiDirective,
+    SetIvDirective
   ],
   imports: [
     BrowserModule,

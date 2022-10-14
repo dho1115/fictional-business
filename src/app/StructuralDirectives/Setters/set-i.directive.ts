@@ -1,4 +1,4 @@
-import { Directive, Input, TemplateRef, ViewContainerRef, Output } from '@angular/core';
+import { Directive, Input, TemplateRef, ViewContainerRef, Renderer2, ElementRef } from '@angular/core';
 
 @Directive({
   selector: '[addGreeting]'
@@ -16,8 +16,8 @@ export class SetIDirective {
     }
   }
 
-  constructor(private template: TemplateRef<any>, private viewContainer: ViewContainerRef) { 
-    
+  constructor(private template: TemplateRef<any>, private viewContainer: ViewContainerRef) {
+
   }
 
 }

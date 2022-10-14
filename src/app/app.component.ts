@@ -11,4 +11,5 @@ export class AppComponent {
   renderAppUnless: boolean = false;
   defaultName: string = '';
   addNewClass = false;
+  setStyles = 'color: red, background-color: green, border: 1px solid black';
 }
