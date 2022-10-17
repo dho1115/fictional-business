@@ -1,10 +1,17 @@
-import { Directive } from '@angular/core';
+import { Directive, ViewContainerRef, TemplateRef, OnInit } from '@angular/core';
 
 @Directive({
-  selector: '[appSetIv]'
+  selector: '[myNgIf]'
 })
 export class SetIvDirective {
 
-  constructor() { }
+  constructor(private viewContainer: ViewContainerRef, private template: TemplateRef<object>) { }
+
+  ngOnInit() {
+    const condition = true;
+
+    condition && this.viewContainer.createEmbeddedView(this.template);
+    !condition && this.viewContainer.clear();
+  }
 
 }
