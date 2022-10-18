@@ -13,7 +13,8 @@ export class UnlessDirective {
       console.log({ templateRef: this.templateRef, vcRef: this.vcRef })
       this.vcRef.clear()
     }
-  }
+  } //This is the alternative to *ngIf
+  
   constructor(private templateRef: TemplateRef<any>, private vcRef: ViewContainerRef) {  }
 
 }

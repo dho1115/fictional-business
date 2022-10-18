@@ -38,6 +38,7 @@ import { SetNewClassDirective } from './StructuralDirectives/Setters-ii/set-new-
 import { SetterIiiDirective } from './StructuralDirectives/Setters-iii/setter-iii.directive';
 import { BindDirectiveIiDirective } from './@HostBinding/bind-directive-ii.directive';
 import { SetIvDirective } from './StructuralDirectives/Setters-iv/set-iv.directive';
+import { ListenerWithViewChildDirective } from './renderer-listen/listener-viewChild/listener-with-view-child.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,7 +76,8 @@ import { SetIvDirective } from './StructuralDirectives/Setters-iv/set-iv.directi
     SetNewClassDirective,
     SetterIiiDirective,
     BindDirectiveIiDirective,
-    SetIvDirective
+    SetIvDirective,
+    ListenerWithViewChildDirective
   ],
   imports: [
     BrowserModule,

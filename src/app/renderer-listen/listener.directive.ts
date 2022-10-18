@@ -4,9 +4,11 @@ import { Directive, Renderer2, ElementRef, OnInit } from '@angular/core';
   selector: '[appListener]'
 })
 export class ListenerDirective implements OnInit {
+  private element: ElementRef;
+  private renderer: Renderer2;
 
-  constructor(private element: ElementRef, private renderer: Renderer2) {
-    
+  constructor() {
+
   }
 
   ngOnInit() {
